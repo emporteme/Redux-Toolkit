@@ -3,14 +3,14 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import { store } from './store'
-import { Ptovider } from 'react-redux'
+import { Provider } from 'react-redux'
 
 
 ReactDOM.render(
     <React.StrictMode>
-        <Ptovider store={store}>
+        <Provider store={store}>
             <App />
-        </Ptovider>
+        </Provider>
     </React.StrictMode>,
     document.getElementById('root'),
 )
